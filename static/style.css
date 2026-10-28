@@ -1,0 +1,74 @@
+/*
+    style.css
+
+    Author: Abraham Horta
+
+    Purpose: This file controls the styling and layout of the frontend interface.
+    It provides the visual structure, form design, button styling, and overall presentation
+    of the Secure Transactional API system in order to create a clean and simple user experience.
+
+    Sources: The following code was inspired/influenced by the following
+    -- sources, but adapted and altered for the API project.
+
+    1. https://www.w3schools.com/
+    2. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/place-content
+    3. https://blog.logrocket.com/server-side-rendering-with-fastapi-and-mysql/
+ */
+
+body
+    {
+        margin: 0;
+        padding: 0;
+        background: LightGray;
+        font-family: Arial, sans-serif;
+    }
+
+.container
+    {
+        width: 700px;
+        margin: 40px auto;
+    }
+
+h1
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+.card
+    {
+        background: MediumSeaGreen;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+h2
+    {
+        margin-top: 0;
+    }
+
+input, select, button
+    {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+button
+    {
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+pre
+    {
+        background: white;
+        padding: 15px;
+        min-height: 80px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
