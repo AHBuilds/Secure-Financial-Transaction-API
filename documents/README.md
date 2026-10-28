@@ -1,1 +1,1 @@
-
+This folder contains the full, official project report, which details the entire project from the hardware requirements, to the testing and difficulties encountered, what libraries are used, the import commands needed, etc. In addition, all of the necessary screenshots are included of the workflow/process of the project, which highlight successful connections, updates, proof of workflows, security testing and results, etc. 
