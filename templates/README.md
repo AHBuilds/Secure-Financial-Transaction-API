@@ -1,1 +1,1 @@
-
+This folder contains the HTML templates used to render the frontend of the Secure Financial Transaction API application. The index.html template provides the main user interface and integrates with the backend through the application's web routes.
