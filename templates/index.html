@@ -1,0 +1,114 @@
+<!--
+    index.html
+
+    Author: Abraham Horta
+
+    Purpose: This file provides the main frontend interface for the Secure Transactional API system.
+    It allows users to log in, create transactions, update transaction statuses, and view system
+    responses through a simple browser-based interface connected to the FastAPI backend.
+
+    Sources: The following code was inspired/influenced by the following
+    -- sources, but adapted and altered for the API project.
+
+    1. https://www.w3schools.com/
+    2. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/text
+    3. https://blog.logrocket.com/server-side-rendering-with-fastapi-and-mysql/
+    4. https://www.youtube.com/watch?v=vqjZOyT4QRs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Financial API</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Secure Financial Transaction System</h1>
+
+    <!-- Login Section -->
+    <div class="card">
+        <h2>Login</h2>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
+
+        <button onclick="loginUser()">
+            Login
+        </button>
+    </div>
+
+    <!-- Create Transaction -->
+    <div class="card">
+        <h2>Create Transaction</h2>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+        >
+
+        <input
+            type="text"
+            id="currency"
+            placeholder="Currency (USD)"
+        >
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Description"
+        >
+
+        <button onclick="createTransaction()">
+            Create Transaction
+        </button>
+    </div>
+
+    <!-- Update Transaction -->
+    <div class="card">
+        <h2>Update Transaction</h2>
+
+        <input
+            type="number"
+            id="transaction_id"
+            placeholder="Transaction ID"
+        >
+
+        <select id="new_status">
+            <option value="">Select Status</option>
+            <option value="Completed">Completed</option>
+            <option value="Failed">Failed</option>
+            <option value="Refunded">Refunded</option>
+            <option value="Pending">Pending</option>
+        </select>
+
+        <button onclick="updateTransaction()">
+            Update Transaction
+        </button>
+    </div>
+
+    <!-- Response Box -->
+    <div class="card">
+        <h2>System Response</h2>
+        <pre id="responseBox"></pre>
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
