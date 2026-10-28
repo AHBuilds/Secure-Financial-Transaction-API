@@ -23,7 +23,7 @@ A capstone project focused on developing a secure financial transaction API usin
 - **Security Testing Tools:** Burp Suite and SQLMap
 - **Development Tools:** MySQL Workbench and Uvicorn
 
-- ## Security Implementation
+## Security Implementation
 
 The application incorporates several security controls:
 
